@@ -36,7 +36,10 @@ jobs:
       - checkout
       - run:
            name: Build changelog
-           command: docker run -it --rm -v "$(pwd)":/usr/local/src/your-app ferrarimarco/github-changelog-generator --user franklin-feingold --project bids-specification-test --output TEST2.md --base CHANGES.md --header-label Changelog
+           command: | 
+              docker pull ferrarimarco/github-changelog-generator
+              docker run -it ---rm -name changelog -v "$(pwd)":/usr/local/src/your-app ferrarimarco/github-changelog-generator --user franklin-feingold --project bids-specification-test
+              docker cp changelog:/usr/local/src/your-app/CHANGELOG.md ./
       - deploy:
            name: Changelog deployment
            working_directory: ~/build
@@ -44,7 +47,7 @@ jobs:
              git config credential.helper 'cache --timeout=120'
              git config user.email "franklin.feingold@gmail.com"
              git config user.name "franklin-feingold"
-             git add TEST2.md
+             git add CHANGELOG.md
              git commit --allow-empty -m "autobuild deployment"
              git push origin master           
 
