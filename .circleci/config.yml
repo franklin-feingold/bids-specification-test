@@ -44,4 +44,4 @@ jobs:
               --output TEST.md \
               --base CHANGES.md \
               --header-label Changelog 
-             docker cp changelog:/user/local/src/your-app/CHANGELOG.md ./
+             docker cp changelog:/user/local/src/your-app/TEST.md ./
