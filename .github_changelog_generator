@@ -1,7 +1,9 @@
-output=CHANGES.md
-issues=false
+output=CHANGES_T.md
+base=CHANGES.md
+header-label= Changelog
+no-issues=true
 #issue-wo-labels=false
-unreleased=false
+#unreleased=false
 
 
 #need to add
