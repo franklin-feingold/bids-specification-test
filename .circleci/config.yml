@@ -38,7 +38,7 @@ jobs:
            name: Build changelog
            command: | 
               docker pull ferrarimarco/github-changelog-generator
-              docker run -it ---rm -name changelog -v "$(pwd)":/usr/local/src/your-app ferrarimarco/github-changelog-generator --user franklin-feingold --project bids-specification-test
+              docker run -it --rm -name changelog -v "$(pwd)":/usr/local/src/your-app ferrarimarco/github-changelog-generator --user franklin-feingold --project bids-specification-test
               docker cp changelog:/usr/local/src/your-app/CHANGELOG.md ./
       - deploy:
            name: Changelog deployment
