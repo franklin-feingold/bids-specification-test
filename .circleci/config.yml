@@ -45,5 +45,5 @@ jobs:
               -p bids-specification-test \
               --output TEST.md \
               --base CHANGES.md \
-              --header-label Changelog \
+              --header-label Changelog 
              docker cp changelog:/user/local/src/your-app/CHANGELOG.md ./
