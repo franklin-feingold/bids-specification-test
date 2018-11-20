@@ -25,3 +25,25 @@ jobs:
           command: pipenv run mkdocs build --clean --strict --verbose
       - store_artifacts:
           path: site
+
+jobs:
+# Auto changelog collector
+  github-changelog-generator:
+    working_directory: ~/build
+    docker:
+      - image: circleci/openjdk:8-jdk
+    steps:
+       - setup_remote_docker:
+           version: 17.11.0-ce
+       - checkout
+       - run:
+           name: Build changelog
+           command: |
+             docker pull timfallmk/github-changelog-generator
+             docker run --name changelog timefallmk-changelog-generator \
+              -u franklin-feingold \
+              -p bids-specification-test \
+              --output TEST.md \
+              --base CHANGES.md \
+              --header-label Changelog \
+             docker cp changelog:/user/local/src/your-app/CHANGELOG.md ./
