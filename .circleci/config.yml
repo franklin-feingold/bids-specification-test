@@ -36,9 +36,7 @@ jobs:
       - checkout
       - run:
            name: Build changelog
-           command: docker run -it --rm -v "$(pwd)":/usr/local/src/your-app ferrarimarco/github-changelog-generator \
-              --user franklin-feingold \
-              --project bids-specification-test \
+           command: docker run -it --rm -v "$(pwd)":/usr/local/src/your-app ferrarimarco/github-changelog-generator --user franklin-feingold --project bids-specification-test \
               --output TEST2.md \
               --base CHANGES.md \
               --header-label Changelog 
