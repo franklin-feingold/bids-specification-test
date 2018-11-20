@@ -40,7 +40,7 @@ jobs:
               cid=$(docker run -it --rm -v "$(pwd)":/usr/local/src/your-app ferrarimarco/github-changelog-generator --user franklin-feingold --project bids-specification-test --output TEST2.md --base CHANGES.md --header-label Changelog )
               docker attach $cid
               docker cp $cid:/usr/local/src/your-app/TEST2.md ./TEST2.md
-     - deploy:
+      - deploy:
            name: Changelog deployment
            working_directory: ~/build
            command: |
