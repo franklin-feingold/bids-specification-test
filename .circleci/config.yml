@@ -36,16 +36,17 @@ jobs:
       - checkout
       - run:
            name: Clone repo
-           working_directory: ~/workdir
+           working_directory: ~/build
            command: |
              git clone -q --depth 2 https://github.com/franklin-feingold/bids-specification-test.git
-             ls ~/workdir/bids-specification-test
+             ls ~/build/bids-specification-test
       - run:
            name: Build changelog
            command: | 
              docker pull ferrarimarco/github-changelog-generator
-             docker run -it --name cl5 -v ~/workdir/bids-specification-test:/repo ferrarimarco/github-changelog-generator:1.14.3 --user franklin-feingold --project bids-specification-test --token ${CHANGE_TOKEN} --output TEST3.md --base /repo/CHANGES.md --header-label Changelog --no-issues --no-issues-wo-labels --no-filter-by-milestone --no-compare-link --pr-label ""
+             docker run -it --name cl5 -v ~/build/bids-specification-test:/repo ferrarimarco/github-changelog-generator:1.14.3 --user franklin-feingold --project bids-specification-test --token ${CHANGE_TOKEN} --output TEST3.md --base /repo/CHANGES.md --header-label Changelog --no-issues --no-issues-wo-labels --no-filter-by-milestone --no-compare-link --pr-label ""
              docker cp cl5:/usr/local/src/your-app/TEST3.md ~/build/
+             cat ~/build/TEST3.md
       - deploy:
            name: Changelog deployment
            working_directory: ~/build
@@ -54,8 +55,8 @@ jobs:
              git config user.email "franklin.feingold@gmail.com"
              git config user.name "franklin-feingold"
              git add TEST3.md
-             git commit --allow-empty -m "autobuild changelog"
-             git push -q https://${CHANGE_TOKEN}@github.com/franklin-feingold/bids-specification-test.git master          
+            #git commit --allow-empty -m "autobuild changelog"
+            #git push -q https://${CHANGE_TOKEN}@github.com/franklin-feingold/bids-specification-test.git master          
 
 workflows:
   version: 2
