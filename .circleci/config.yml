@@ -41,7 +41,7 @@ jobs:
              docker run --name changelog timefallmk-changelog-generator \
               -u franklin-feingold \
               -p bids-specification-test \
-              --output TEST.md \
+              --output TEST2.md \
               --base CHANGES.md \
               --header-label Changelog 
-             docker cp changelog:/user/local/src/your-app/TEST.md ./
+             docker cp changelog:/user/local/src/your-app/TEST2.md ./
