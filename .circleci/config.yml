@@ -37,8 +37,8 @@ jobs:
       - run:
            name: Build changelog
            command: docker run -it --rm -v "$(pwd)":/usr/local/src/your-app ferrarimarco/github-changelog-generator \
-              -u franklin-feingold \
-              -p bids-specification-test \
+              --user franklin-feingold \
+              --project bids-specification-test \
               --output TEST2.md \
               --base CHANGES.md \
               --header-label Changelog 
@@ -52,8 +52,6 @@ jobs:
              git add .
              git commit --allow-empty -m "autobuild deployment"
              git push origin master           
-      - store_artifacts:
-          path: site
 
 workflows:
   version: 2
