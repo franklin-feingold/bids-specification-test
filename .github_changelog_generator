@@ -1,7 +1,7 @@
 output=CHANGES_T.md
 base=CHANGES.md
-header-label= Changelog
-no-issues=true
+header-label=Changelog
+issues=false
 #issue-wo-labels=false
 #unreleased=false
 
