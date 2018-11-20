@@ -23,18 +23,15 @@ jobs:
       - run:
           name: generate docs
           command: pipenv run mkdocs build --clean --strict --verbose
-      - store_artifacts:
-          path: site
 # Auto changelog collector
-  build:
     working_directory: ~/build
     docker:
       - image: circleci/openjdk:8-jdk
     steps:
-       - setup_remote_docker:
+      - setup_remote_docker:
            version: 17.11.0-ce
-       - checkout
-       - run:
+      - checkout
+      - run:
            name: Build changelog
            command: docker run -it --rm -v "$(pwd)":/usr/local/src/your-app ferrarimarco/github-changelog-generator \
               -u franklin-feingold \
@@ -42,7 +39,7 @@ jobs:
               --output TEST2.md \
               --base CHANGES.md \
               --header-label Changelog 
-        - deploy:
+      - deploy:
            name: Changelog deployment
            working_directory: ~/build
            command: |
@@ -51,4 +48,7 @@ jobs:
              git config user.name "franklin-feingold"
              git add .
              git commit --allow-empty -m "autobuild deployment"
-             git push origin master
+             git push origin master           
+      - store_artifacts:
+          path: site
+
