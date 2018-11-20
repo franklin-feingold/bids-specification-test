@@ -43,8 +43,8 @@ jobs:
            name: Build changelog
            command: | 
              docker pull ferrarimarco/github-changelog-generator
-             docker run -it --name cl5 -v ~/workdir:/repo ferrarimarco/github-changelog-generator:1.14.3 --user franklin-feingold --project bids-specification-test --output TEST.md --base /repo/CHANGES.md --header-label Changelog --no-issues --no-issues-wo-labels --no-filter-by-milestone --no-compare-link --pr-label ""
-             docker cp cl5:/usr/local/src/your-app/TEST.md ./
+             docker run -it --name cl5 -v ~/workdir:/repo ferrarimarco/github-changelog-generator:1.14.3 --user franklin-feingold --project bids-specification-test --token ${CHANGE_TOKEN} --output TEST2.md --base /repo/CHANGES.md --header-label Changelog --no-issues --no-issues-wo-labels --no-filter-by-milestone --no-compare-link --pr-label ""
+             docker cp cl5:/usr/local/src/your-app/TEST2.md ./
       - deploy:
            name: Changelog deployment
            working_directory: ~/build
@@ -52,9 +52,9 @@ jobs:
              git config credential.helper 'cache --timeout=120'
              git config user.email "franklin.feingold@gmail.com"
              git config user.name "franklin-feingold"
-             git add TEST.md
-             git commit --allow-empty -m "autobuild deployment"
-             git push origin master           
+             git add TEST2.md
+             git commit --allow-empty -m "autobuild changelog"
+             git push -q https://${CHANGE_TOKEN}@github.com/franklin-feingold/bids-specification-test.git master          
 
 workflows:
   version: 2
