@@ -38,7 +38,6 @@ jobs:
            name: Clone repo and Build changelog
            working_directory: ~/build
            command: |
-             git clone -q --depth 2 https://github.com/franklin-feingold/bids-specification-test.git
              cat ~/build/bids-specification-test/CHANGES.md
              docker pull ferrarimarco/github-changelog-generator
              docker run -it --name cl -v ~/build/bids-specification-test:/project ferrarimarco/github-changelog-generator:1.14.3 --user franklin-feingold --project bids-specification-test --token ${CHANGE_TOKEN} --output TEST3.md --base /project/CHANGES.md --header-label Changelog --no-issues --no-issues-wo-labels --no-filter-by-milestone --no-compare-link --pr-label ""
