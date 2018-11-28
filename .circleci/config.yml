@@ -50,7 +50,7 @@ jobs:
              git config user.name "franklin-feingold"
              git add TEST3.md
              git commit -m "autobuild changelog"
-             git push -q https://${CHANGE_TOKEN}@github.com/franklin-feingold/bids-specification-test.git master          
+             git push https://${CHANGE_TOKEN}@github.com/franklin-feingold/bids-specification-test.git master          
 
 workflows:
   version: 2
