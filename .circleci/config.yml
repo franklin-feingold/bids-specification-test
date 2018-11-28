@@ -30,6 +30,7 @@ jobs:
     working_directory: ~/build
     docker: 
       - image: ferrarimarco/github-changelog-generator:1.14.3
+      - image: circleci/openjdk:8-jdk
     steps:
       - setup_remote_docker:
            version: 17.11.0-ce
@@ -40,12 +41,7 @@ jobs:
            command: |
              cat ~/build/CHANGES.md
              github_changelog_generator --user franklin-feingold --project bids-specification-test --token ${CHANGE_TOKEN} --output TEST3.md --base ~/build/CHANGES.md --header-label Changelog --no-issues --no-issues-wo-labels --no-filter-by-milestone --no-compare-link --pr-label ""
-             cat ~/build/TEST3.md
-    docker:
-      - image: circleci/openjdk:8-jdk
-    steps:
-       - setup_remote_docker:
-           version: 17.11.0-ce        
+             cat ~/build/TEST3.md      
        - deploy:
            name: Changelog deployment
            working_directory: ~/build
