@@ -27,13 +27,15 @@ jobs:
           path: site
 # Auto changelog collector
   github-changelog-generator:
-    working_directory: ~/build
+    working_directory: ~
     docker: 
       - image: ferrarimarco/github-changelog-generator:1.14.3
-      - image: circleci/openjdk:8-jdk
     steps:
       - setup_remote_docker:
            version: 17.11.0-ce
+      - run:
+           name: mkdir build
+           command: mkdir build
       - checkout
       - run:
            name: Clone repo and Build changelog
@@ -43,7 +45,7 @@ jobs:
              github_changelog_generator --user franklin-feingold --project bids-specification-test --token ${CHANGE_TOKEN} --output TEST3.md --base ~/build/CHANGES.md --header-label Changelog --no-issues --no-issues-wo-labels --no-filter-by-milestone --no-compare-link --pr-label ""
              cat ~/build/TEST3.md
       - persist_to_workspace:
-             root: ~
+             root: build
              
 # Auto changelog collector
   push:
