@@ -41,7 +41,23 @@ jobs:
            command: |
              cat ~/build/CHANGES.md
              github_changelog_generator --user franklin-feingold --project bids-specification-test --token ${CHANGE_TOKEN} --output TEST3.md --base ~/build/CHANGES.md --header-label Changelog --no-issues --no-issues-wo-labels --no-filter-by-milestone --no-compare-link --pr-label ""
-             cat ~/build/TEST3.md      
+             cat ~/build/TEST3.md
+      - persist_to_workspace:
+             root: build
+             
+# Auto changelog collector
+  push:
+    working_directory: ~/build
+    docker: 
+      - image: circleci/openjdk:8-jdk
+    steps:
+      - setup_remote_docker:
+           version: 17.11.0-ce                          
+      - attach_workspace:
+            at: ~/build
+      - run:
+           name: test
+           command: cat ~/build/CHANGES.md
       - deploy:
            name: Changelog deployment
            working_directory: ~/build
@@ -59,3 +75,6 @@ workflows:
     jobs:
       - build
       - github-changelog-generator
+      - push
+           requires:
+               - github-changelog-generator
