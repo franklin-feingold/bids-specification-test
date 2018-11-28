@@ -75,6 +75,6 @@ workflows:
     jobs:
       - build
       - github-changelog-generator
-      - push
-           requires:
+      - push:
+          requires:
                - github-changelog-generator
