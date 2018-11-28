@@ -38,7 +38,6 @@ jobs:
            name: Clone repo and Build changelog
            working_directory: ~/build
            command: |
-             wget https://raw.githubusercontent.com/franklin-feingold/bids-specification-test/master/CHANGES.md
              cat ~/build/CHANGES.md
              github_changelog_generator --user franklin-feingold --project bids-specification-test --token ${CHANGE_TOKEN} --output TEST3.md --base ~/build/CHANGES.md --header-label Changelog --no-issues --no-issues-wo-labels --no-filter-by-milestone --no-compare-link --pr-label ""
              cat ~/build/TEST3.md
