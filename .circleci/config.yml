@@ -33,6 +33,7 @@ jobs:
     steps:
       - setup_remote_docker:
            version: 17.11.0-ce
+      - checkout
       - run:
            name: Clone repo and Build changelog
            working_directory: ~/build
