@@ -78,7 +78,7 @@ workflows:
       - github-changelog-generator:
           filters:
               tags:
-                only: /^(?!pull\/).*$/
+                only: /^merge*.*/
       - push:
           requires:
                - github-changelog-generator
