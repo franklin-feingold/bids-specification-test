@@ -27,7 +27,7 @@ jobs:
           path: site
 # Auto changelog collector
   github-changelog-generator:
-    working_directory: ~
+    working_directory: ~/build
     docker: 
       - image: ferrarimarco/github-changelog-generator:1.14.3
     steps:
