@@ -43,6 +43,7 @@ jobs:
              cat ~/build/TEST3.md
       - persist_to_workspace:
              root: .
+             paths: TEST3.md
              
 # Auto changelog collector
   push:
@@ -52,11 +53,12 @@ jobs:
     steps:
       - setup_remote_docker:
            version: 17.11.0-ce                          
+      - checkout
       - attach_workspace:
             at: ~/build
       - run:
            name: test
-           command: cat ~/build/CHANGES.md
+           command: cat ~/build/TEST3.md
       - deploy:
            name: Changelog deployment
            working_directory: ~/build
