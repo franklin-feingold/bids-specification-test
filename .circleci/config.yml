@@ -76,6 +76,8 @@ workflows:
     jobs:
       - build
       - github-changelog-generator
+          filters:
+             only: /^(?!pull\/).*$/
       - push:
           requires:
                - github-changelog-generator
