@@ -42,7 +42,7 @@ jobs:
              github_changelog_generator --user franklin-feingold --project bids-specification-test --token ${CHANGE_TOKEN} --output TEST3.md --base ~/build/CHANGES.md --header-label Changelog --no-issues --no-issues-wo-labels --no-filter-by-milestone --no-compare-link --pr-label ""
              cat ~/build/TEST3.md
       - persist_to_workspace:
-             root: build
+             root: .
              
 # Auto changelog collector
   push:
