@@ -38,9 +38,17 @@ jobs:
            name: Clone repo and Build changelog
            working_directory: ~/build
            command: |
+             if git log -1 --pretty=%s | grep =Merge* ; then
+             if git log -1 --pretty=%b | grep =*release* ; then
+             echo "New release, do nothing"
+             else
              cat ~/build/CHANGES.md
              github_changelog_generator --user franklin-feingold --project bids-specification-test --token ${CHANGE_TOKEN} --output TEST3.md --base ~/build/CHANGES.md --header-label Changelog --no-issues --no-issues-wo-labels --no-filter-by-milestone --no-compare-link --pr-label ""
              cat ~/build/TEST3.md
+             fi
+             else
+             echo "Not a PR merge commit"
+             fi
       - persist_to_workspace:
              root: .
              paths: TEST3.md
@@ -63,22 +71,27 @@ jobs:
            name: Changelog deployment
            working_directory: ~/build
            command: |
+             if git log -1 --pretty=%B | grep =Merge* ; then
+             if git log -1 --pretty=%B | grep =*release* ; then
+             echo "New release, do nothing"
+             else
              git config credential.helper 'cache --timeout=120'
              git config user.email "franklin.feingold@gmail.com"
              git config user.name "franklin-feingold"
              git add TEST3.md
              git commit -m "autobuild changelog"
-             git push https://${CHANGE_TOKEN}@github.com/franklin-feingold/bids-specification-test.git master          
+             git push https://${CHANGE_TOKEN}@github.com/franklin-feingold/bids-specification-test.git master
+             fi
+             else
+             echo "Not a PR merge commit"
+             fi
 
 workflows:
   version: 2
   search_build:
     jobs:
       - build
-      - github-changelog-generator:
-          filters:
-              tags:
-                only: /^merge*.*/
+      - github-changelog-generator
       - push:
           requires:
                - github-changelog-generator
