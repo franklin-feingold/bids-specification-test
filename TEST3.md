@@ -4,6 +4,7 @@ Changelog
 
 
 
+- New release [\#6](https://github.com/franklin-feingold/bids-specification-test/pull/6) ([franklin-feingold](https://github.com/franklin-feingold))
 - Create test.txt [\#5](https://github.com/franklin-feingold/bids-specification-test/pull/5) ([franklin-feingold](https://github.com/franklin-feingold))
 - empty to open PR [\#4](https://github.com/franklin-feingold/bids-specification-test/pull/4) ([franklin-feingold](https://github.com/franklin-feingold))
 - empty to test release [\#3](https://github.com/franklin-feingold/bids-specification-test/pull/3) ([franklin-feingold](https://github.com/franklin-feingold))
