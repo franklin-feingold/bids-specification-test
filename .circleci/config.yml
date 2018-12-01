@@ -39,7 +39,7 @@ jobs:
            working_directory: ~/build
            command: |
              if git log -1 --pretty=%s | grep Merge* ; then
-             if git log -1 --pretty=%b | grep *release* ; then
+             if git log -1 --pretty=%b | grep release ; then
              echo "New release, do nothing"
              else
              cat ~/build/CHANGES.md
@@ -72,7 +72,7 @@ jobs:
            working_directory: ~/build
            command: |
              if git log -1 --pretty=%s | grep Merge* ; then
-             if git log -1 --pretty=%b | grep *release* ; then
+             if git log -1 --pretty=%b | grep release ; then
              echo "New release, do nothing"
              else
              git config credential.helper 'cache --timeout=120'
