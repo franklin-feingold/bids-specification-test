@@ -4,6 +4,8 @@ Changelog
 
 
 
+- Create test.txt [\#5](https://github.com/franklin-feingold/bids-specification-test/pull/5) ([franklin-feingold](https://github.com/franklin-feingold))
+- empty to open PR [\#4](https://github.com/franklin-feingold/bids-specification-test/pull/4) ([franklin-feingold](https://github.com/franklin-feingold))
 - empty to test release [\#3](https://github.com/franklin-feingold/bids-specification-test/pull/3) ([franklin-feingold](https://github.com/franklin-feingold))
 
 ## [t1](https://github.com/franklin-feingold/bids-specification-test/tree/t1) (2018-11-17)
