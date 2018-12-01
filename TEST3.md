@@ -4,6 +4,12 @@ Changelog
 
 
 
+- Create t222.txt [\#8](https://github.com/franklin-feingold/bids-specification-test/pull/8) ([franklin-feingold](https://github.com/franklin-feingold))
+
+## [test2](https://github.com/franklin-feingold/bids-specification-test/tree/test2) (2018-12-01)
+
+
+- New release [\#7](https://github.com/franklin-feingold/bids-specification-test/pull/7) ([franklin-feingold](https://github.com/franklin-feingold))
 - New release [\#6](https://github.com/franklin-feingold/bids-specification-test/pull/6) ([franklin-feingold](https://github.com/franklin-feingold))
 - Create test.txt [\#5](https://github.com/franklin-feingold/bids-specification-test/pull/5) ([franklin-feingold](https://github.com/franklin-feingold))
 - empty to open PR [\#4](https://github.com/franklin-feingold/bids-specification-test/pull/4) ([franklin-feingold](https://github.com/franklin-feingold))
