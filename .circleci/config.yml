@@ -58,7 +58,8 @@ jobs:
   remark:
     working_directory: ~/build
     docker: 
-      - image: circleci/node:4.8.2
+      - image: circleci/node:8.9.1
+      - image: mongo:3.4.4
     steps:
       - setup_remote_docker:
            version: 17.11.0-ce                          
@@ -67,6 +68,11 @@ jobs:
       - run:
            name: update-npm
            command: 'sudo npm install -g npm@latest'
+      - restore_cache: # special step to restore the dependency cache
+           key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+           name: install-npm-wee
+           command: npm install      
       - run:
            name: install remark
            command: npm install remark-cli@5.0.0 remark-lint@6.0.2 remark-preset-lint-recommended@3.0.2 remark-preset-lint-markdown-style-guide@2.1.2
