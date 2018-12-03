@@ -31,13 +31,13 @@ from the meg.json.
 
 - Added support for MEG data (merged BEP008)
 - Added SequenceName field.
-- Added support for describing events with Hierarchical Event Descriptors [[4.3 Task events](src/04-modality-specific-files/03-task-events.md)].
-- Added VolumeTiming and AcquisitionDuration fields [[4.1 Task (including resting state) imaging data](src/04-modality-specific-files/01-magnetic-resonance-imaging-data.md#task-including-resting-state-imaging-data)].
+- Added support for describing events with Hierarchical Event Descriptors [[4.3 Task events](04-modality-specific-files/03-task-events.md)].
+- Added VolumeTiming and AcquisitionDuration fields [[4.1 Task (including resting state) imaging data](04-modality-specific-files/01-magnetic-resonance-imaging-data.md#task-including-resting-state-imaging-data)].
 - Added DwellTime field.
 
 1.0.2
 
--   Added support for high resolution (anatomical) T2star images [[4.1 Anatomy imaging data](src/04-modality-specific-files/01-magnetic-resonance-imaging-data.md#anatomy-imaging-data)].
+-   Added support for high resolution (anatomical) T2star images [[4.1 Anatomy imaging data](04-modality-specific-files/01-magnetic-resonance-imaging-data.md#anatomy-imaging-data)].
 
 -   Added support for multiple defacing masks [[4.1 Anatomy imaging data](src/04-modality-specific-files/01-magnetic-resonance-imaging-data.md#anatomy-imaging-data)].
 
