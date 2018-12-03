@@ -55,7 +55,7 @@ jobs:
              paths: src
 
 # Clear remark test
-  push:
+  remark:
     working_directory: ~/build
     docker: 
       - image: circleci/node:4.8.2
@@ -115,6 +115,9 @@ workflows:
     jobs:
       - build
       - github-changelog-generator
-      - push:
+      - remark:
           requires:
                - github-changelog-generator
+      - push:
+          requires:
+               - remark
