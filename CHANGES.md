@@ -1,6 +1,4 @@
-1 Changelog
-
-1.1.1
+## 1.1.1
 
 -   Improved the MEG landmark coordinates description.
 
@@ -12,7 +10,7 @@ from the meg.json.
 
 -   Improved the behavioural data description.
 
-1.1.0
+## 1.1.0
 
 - Added support for MEG data (merged BEP008)
 - Added SequenceName field.
@@ -20,7 +18,7 @@ from the meg.json.
 - Added VolumeTiming and AcquisitionDuration fields [[4.1 Task (including resting state) imaging data](src/04-modality-specific-files/01-magnetic-resonance-imaging-data.md#task-including-resting-state-imaging-data)].
 - Added DwellTime field.
 
-1.0.2
+## 1.0.2
 
 -   Added support for high resolution (anatomical) T2star images [[4.1 Anatomy imaging data](src/04-modality-specific-files/01-magnetic-resonance-imaging-data.md#anatomy-imaging-data)].
 
@@ -33,7 +31,7 @@ from the meg.json.
 
 -   Added support for multi echo BOLD data [[4.1 Task (including resting state) imaging data](src/04-modality-specific-files/01-magnetic-resonance-imaging-data.md#task-including-resting-state-imaging-data)].
 
-1.0.1
+## 1.0.1
 
 -   Added InstitutionName field [[4.1 Task (including resting state) imaging data](src/04-modality-specific-files/01-magnetic-resonance-imaging-data.md#task-including-resting-state-imaging-data)].
 
@@ -49,7 +47,7 @@ from the meg.json.
     [[4.1 Task (including resting state) imaging
    data](src/04-modality-specific-files/01-magnetic-resonance-imaging-data.md#task-including-resting-state-imaging-data)].
 
-1.0.1-rc1
+## 1.0.1-rc1
 
 -   Added T1 Rho maps [[4.1 Anatomy imaging
    data](src/04-modality-specific-files/01-magnetic-resonance-imaging-data.md#anatomy-imaging-data)].
@@ -79,7 +77,7 @@ from the meg.json.
 
 -   Added quantitative proton density maps.
 
-1.0.0
+## 1.0.0
 
 -   Added ability to specify fieldmaps acquired with multiple parameter
    sets.
@@ -88,7 +86,7 @@ from the meg.json.
 
 -   Added FLASH anatomical images.
 
-1.0.0-rc4
+## 1.0.0-rc4
 
 -   Replaced links to neurolex with explicit DICOM Tags.
 
@@ -99,7 +97,7 @@ from the meg.json.
 -   Be more explicit about contents of JSON files for structural
    (anatomical) scans.
 
-1.0.0-rc3
+## 1.0.0-rc3
 
 -   Renamed PhaseEncodingDirection values from “x”, “y”,
    “z” to “i”, “j”, “k” to avoid confusion with FSL parameters
@@ -107,7 +105,7 @@ from the meg.json.
 -   Renamed SliceEncodingDirection values from “x”, “y”,
    “z” to “i”, “j”, “k”
 
-1.0.0-rc2
+## 1.0.0-rc2
 
 -   Removed the requirement that TSV files cannot include more than two
    consecutive spaces.
@@ -159,6 +157,6 @@ of motion
 parameters obtained by
 the scanner side reconstruction algorithms.
 
-1.0.0-rc1
+## 1.0.0-rc1
 
 - Initial release
