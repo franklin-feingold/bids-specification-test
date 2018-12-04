@@ -97,7 +97,7 @@ jobs:
            version: 17.11.0-ce                          
       - checkout
       - attach_workspace:
-            at: ~/build/src/
+            at: ~/build
       - run:
            name: test
            command: cat ~/build/src/CHANGE.md
