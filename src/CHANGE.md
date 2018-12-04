@@ -2,6 +2,7 @@ Changelog
 
 ## [Unreleased](https://github.com/franklin-feingold/bids-specification-test/tree/HEAD)
 
+-   Update CHANGES.md [#10](https://github.com/franklin-feingold/bids-specification-test/pull/10) ([franklin-feingold](https://github.com/franklin-feingold))
 -   Update CHANGES.md [#9](https://github.com/franklin-feingold/bids-specification-test/pull/9) ([franklin-feingold](https://github.com/franklin-feingold))
 -   Create t222.txt [#8](https://github.com/franklin-feingold/bids-specification-test/pull/8) ([franklin-feingold](https://github.com/franklin-feingold))
 
@@ -33,8 +34,8 @@ Changelog
 
 -   Added support for MEG data (merged BEP008)
 -   Added SequenceName field.
--   Added support for describing events with Hierarchical Event Descriptors \[[4.3 Task events](src/04-modality-specific-files/03-task-events.md)].
--   Added VolumeTiming and AcquisitionDuration fields \[[4.1 Task (including resting state) imaging data](src/04-modality-specific-files/01-magnetic-resonance-imaging-data.md#task-including-resting-state-imaging-data)].
+-   Added support for describing events with Hierarchical Event Descriptors \[[4.3 Task events](04-modality-specific-files/03-task-events.md)].
+-   Added VolumeTiming and AcquisitionDuration fields \[[4.1 Task (including resting state) imaging data](04-modality-specific-files/01-magnetic-resonance-imaging-data.md#task-including-resting-state-imaging-data)].
 -   Added DwellTime field.
 
 ## 1.0.2
