@@ -85,6 +85,7 @@ jobs:
              if git log -1 --pretty=%s | grep Merge* ; then
              if git log -1 --pretty=%b | grep release ; then
              echo "New release, do nothing"
+             mkdir ~/build/src/tmp/
              touch ~/build/src/tmp/empty.txt
              else
              mkdir ~/build/src/tmp/
@@ -93,6 +94,7 @@ jobs:
              fi
              else
              echo "Not a PR merge commit"
+             mkdir ~/build/src/tmp/
              touch ~/build/src/tmp/empty.txt
              fi
       - persist_to_workspace:
