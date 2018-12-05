@@ -2,6 +2,10 @@ Changelog
 
 ## [Unreleased](https://github.com/franklin-feingold/bids-specification-test/tree/HEAD)
 
+-   test new rel pr [#19](https://github.com/franklin-feingold/bids-specification-test/pull/19) ([franklin-feingold](https://github.com/franklin-feingold))
+
+## [t3](https://github.com/franklin-feingold/bids-specification-test/tree/t3) (2018-12-05)
+
 -   Update config.yml 345 [#18](https://github.com/franklin-feingold/bids-specification-test/pull/18) ([franklin-feingold](https://github.com/franklin-feingold))
 -   Update config.yml 6 [#17](https://github.com/franklin-feingold/bids-specification-test/pull/17) ([franklin-feingold](https://github.com/franklin-feingold))
 -   make remark happy [#16](https://github.com/franklin-feingold/bids-specification-test/pull/16) ([franklin-feingold](https://github.com/franklin-feingold))
