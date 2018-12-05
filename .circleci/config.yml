@@ -85,6 +85,7 @@ jobs:
              if git log -1 --pretty=%s | grep Merge* ; then
              if git log -1 --pretty=%b | grep release ; then
              echo "New release, do nothing"
+             touch ~/build/src/tmp/empty.txt
              else
              mkdir ~/build/src/tmp/
              ~/node_modules/.bin/remark ~/build/src/TEST3.md --frail -o ~/build/src/tmp/CHANGE.md
@@ -92,6 +93,7 @@ jobs:
              fi
              else
              echo "Not a PR merge commit"
+             touch ~/build/src/tmp/empty.txt
              fi
       - persist_to_workspace:
              root: ~/build/src
@@ -108,9 +110,6 @@ jobs:
       - checkout
       - attach_workspace:
             at: ~/build
-      - run:
-           name: test
-           command: cat ~/build/tmp/CHANGE.md
       - deploy:
            name: Changelog deployment
            working_directory: ~/build
