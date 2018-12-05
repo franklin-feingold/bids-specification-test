@@ -2,6 +2,7 @@ Changelog
 
 ## [Unreleased](https://github.com/franklin-feingold/bids-specification-test/tree/HEAD)
 
+-   Update config.yml 6 [#17](https://github.com/franklin-feingold/bids-specification-test/pull/17) ([franklin-feingold](https://github.com/franklin-feingold))
 -   make remark happy [#16](https://github.com/franklin-feingold/bids-specification-test/pull/16) ([franklin-feingold](https://github.com/franklin-feingold))
 -   Update .remarkrc 1 [#15](https://github.com/franklin-feingold/bids-specification-test/pull/15) ([franklin-feingold](https://github.com/franklin-feingold))
 -   Update 3 config.yml [#14](https://github.com/franklin-feingold/bids-specification-test/pull/14) ([franklin-feingold](https://github.com/franklin-feingold))
