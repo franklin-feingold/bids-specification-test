@@ -1,4 +1,3 @@
-1 Changelog
 
 1.1.1
 
