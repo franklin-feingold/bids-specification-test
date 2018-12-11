@@ -11,7 +11,7 @@ from the meg.json.
 
 -   Improved the behavioural data description.
 
-1.1.0
+## 1.1.0
 
 - Added support for MEG data (merged BEP008)
 - Added SequenceName field.
