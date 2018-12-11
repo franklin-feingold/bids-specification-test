@@ -1,6 +1,6 @@
 Changelog
 
-## [Unreleased](https://github.com/franklin-feingold/bids-specification-test/tree/HEAD)
+## [t4](https://github.com/franklin-feingold/bids-specification-test/tree/HEAD)
 
 -   test new rel pr [#19](https://github.com/franklin-feingold/bids-specification-test/pull/19) ([franklin-feingold](https://github.com/franklin-feingold))
 
