@@ -128,7 +128,7 @@ jobs:
              git config user.name "franklin-feingold"
              git add ~/build/src/CHANGES.md
              git commit -m "autobuild CHANGES.md"
-             git push https://${CHANGE_TOKEN}@github.com/franklin-feingold/bids-specification-test2.git master
+             git push https://${CHANGE_TOKEN}@github.com/franklin-feingold/bids-specification-test.git master
              fi
              else
              echo "Not a PR merge commit"
