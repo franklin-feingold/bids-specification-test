@@ -1,6 +1,6 @@
 Changelog
 
-## [Unreleased](https://github.com/franklin-feingold/bids-specification-test/tree/HEAD)
+## [t4](https://github.com/franklin-feingold/bids-specification-test/tree/HEAD)
 
 -   Update CHANGES.md [#10](https://github.com/franklin-feingold/bids-specification-test/pull/10) ([franklin-feingold](https://github.com/franklin-feingold))
 -   Update CHANGES.md [#9](https://github.com/franklin-feingold/bids-specification-test/pull/9) ([franklin-feingold](https://github.com/franklin-feingold))
