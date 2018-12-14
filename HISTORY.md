@@ -19,7 +19,7 @@ from the meg.json.
 - Added VolumeTiming and AcquisitionDuration fields [[4.1 Task (including resting state) imaging data](src/04-modality-specific-files/01-magnetic-resonance-imaging-data.md#task-including-resting-state-imaging-data)].
 - Added DwellTime field.
 
-1.0.2
+## 1.0.2
 
 -   Added support for high resolution (anatomical) T2star images [[4.1 Anatomy imaging data](src/04-modality-specific-files/01-magnetic-resonance-imaging-data.md#anatomy-imaging-data)].
 
