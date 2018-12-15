@@ -2,6 +2,10 @@ Changelog
 
 ## [Unreleased](https://github.com/franklin-feingold/bids-specification-test/tree/HEAD)
 
+-   Config PR test [#29](https://github.com/franklin-feingold/bids-specification-test/pull/29) ([franklin-feingold](https://github.com/franklin-feingold))
+-   update [#28](https://github.com/franklin-feingold/bids-specification-test/pull/28) ([franklin-feingold](https://github.com/franklin-feingold))
+-   test change overwrite [#27](https://github.com/franklin-feingold/bids-specification-test/pull/27) ([franklin-feingold](https://github.com/franklin-feingold))
+-   REL: test Update HISTORY.md [#26](https://github.com/franklin-feingold/bids-specification-test/pull/26) ([franklin-feingold](https://github.com/franklin-feingold))
 -   Update TEST.md mm [#25](https://github.com/franklin-feingold/bids-specification-test/pull/25) ([franklin-feingold](https://github.com/franklin-feingold))
 -   Update TEST2.md [#24](https://github.com/franklin-feingold/bids-specification-test/pull/24) ([franklin-feingold](https://github.com/franklin-feingold))
 
