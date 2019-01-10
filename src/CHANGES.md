@@ -1,7 +1,12 @@
 Changelog
 
-## [1.1.2](https://github.com/franklin-feingold/bids-specification-test/tree/1.1.2)
+## [Unreleased](https://github.com/franklin-feingold/bids-specification-test/tree/HEAD)
 
+-   regen Update empty.txt [#31](https://github.com/franklin-feingold/bids-specification-test/pull/31) ([franklin-feingold](https://github.com/franklin-feingold))
+
+## [1.1.2](https://github.com/franklin-feingold/bids-specification-test/tree/1.1.2) (2019-01-10)
+
+-   REL: v.test rel [#30](https://github.com/franklin-feingold/bids-specification-test/pull/30) ([franklin-feingold](https://github.com/franklin-feingold))
 -   Config PR test [#29](https://github.com/franklin-feingold/bids-specification-test/pull/29) ([franklin-feingold](https://github.com/franklin-feingold))
 -   update [#28](https://github.com/franklin-feingold/bids-specification-test/pull/28) ([franklin-feingold](https://github.com/franklin-feingold))
 -   test change overwrite [#27](https://github.com/franklin-feingold/bids-specification-test/pull/27) ([franklin-feingold](https://github.com/franklin-feingold))
@@ -14,9 +19,9 @@ Changelog
 -   Update README.md release re [#23](https://github.com/franklin-feingold/bids-specification-test/pull/23) ([franklin-feingold](https://github.com/franklin-feingold))
 -   Update HISTORY.md release re [#22](https://github.com/franklin-feingold/bids-specification-test/pull/22) ([franklin-feingold](https://github.com/franklin-feingold))
 
-## [t5](https://github.com/franklin-feingold/bids-specification-test/tree/t5) (2018-12-11)
-
 ## [t6](https://github.com/franklin-feingold/bids-specification-test/tree/t6) (2018-12-11)
+
+## [t5](https://github.com/franklin-feingold/bids-specification-test/tree/t5) (2018-12-11)
 
 -   Update config.yml44 [#21](https://github.com/franklin-feingold/bids-specification-test/pull/21) ([franklin-feingold](https://github.com/franklin-feingold))
 -   Update CHANGE.md 4 [#20](https://github.com/franklin-feingold/bids-specification-test/pull/20) ([franklin-feingold](https://github.com/franklin-feingold))
