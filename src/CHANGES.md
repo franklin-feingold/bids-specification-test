@@ -2,6 +2,10 @@ Changelog
 
 ## [Unreleased](https://github.com/franklin-feingold/bids-specification-test/tree/HEAD)
 
+-   check Update empty.txt [#32](https://github.com/franklin-feingold/bids-specification-test/pull/32) ([franklin-feingold](https://github.com/franklin-feingold))
+
+## [v1.1.2](https://github.com/franklin-feingold/bids-specification-test/tree/v1.1.2) (2019-01-10)
+
 -   regen Update empty.txt [#31](https://github.com/franklin-feingold/bids-specification-test/pull/31) ([franklin-feingold](https://github.com/franklin-feingold))
 
 ## [1.1.2](https://github.com/franklin-feingold/bids-specification-test/tree/1.1.2) (2019-01-10)
@@ -19,9 +23,9 @@ Changelog
 -   Update README.md release re [#23](https://github.com/franklin-feingold/bids-specification-test/pull/23) ([franklin-feingold](https://github.com/franklin-feingold))
 -   Update HISTORY.md release re [#22](https://github.com/franklin-feingold/bids-specification-test/pull/22) ([franklin-feingold](https://github.com/franklin-feingold))
 
-## [t6](https://github.com/franklin-feingold/bids-specification-test/tree/t6) (2018-12-11)
-
 ## [t5](https://github.com/franklin-feingold/bids-specification-test/tree/t5) (2018-12-11)
+
+## [t6](https://github.com/franklin-feingold/bids-specification-test/tree/t6) (2018-12-11)
 
 -   Update config.yml44 [#21](https://github.com/franklin-feingold/bids-specification-test/pull/21) ([franklin-feingold](https://github.com/franklin-feingold))
 -   Update CHANGE.md 4 [#20](https://github.com/franklin-feingold/bids-specification-test/pull/20) ([franklin-feingold](https://github.com/franklin-feingold))
