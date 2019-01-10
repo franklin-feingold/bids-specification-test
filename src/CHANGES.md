@@ -1,6 +1,6 @@
 Changelog
 
-## [Unreleased](https://github.com/franklin-feingold/bids-specification-test/tree/HEAD)
+## [1.1.2](https://github.com/franklin-feingold/bids-specification-test/tree/1.1.2)
 
 -   Config PR test [#29](https://github.com/franklin-feingold/bids-specification-test/pull/29) ([franklin-feingold](https://github.com/franklin-feingold))
 -   update [#28](https://github.com/franklin-feingold/bids-specification-test/pull/28) ([franklin-feingold](https://github.com/franklin-feingold))
