@@ -2,6 +2,7 @@ Changelog
 
 ## [Unreleased](https://github.com/franklin-feingold/bids-specification-test/tree/HEAD)
 
+-   Update t222.txt [#33](https://github.com/franklin-feingold/bids-specification-test/pull/33) ([franklin-feingold](https://github.com/franklin-feingold))
 -   check Update empty.txt [#32](https://github.com/franklin-feingold/bids-specification-test/pull/32) ([franklin-feingold](https://github.com/franklin-feingold))
 
 ## [v1.1.2](https://github.com/franklin-feingold/bids-specification-test/tree/v1.1.2) (2019-01-10)
