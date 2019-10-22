@@ -2,13 +2,13 @@
 
 Table of Contents
 
-[Introduction](#1.-Introduction)
+[Introduction](#1-Introduction)
 
-[Background](#2.-Background)
-- [Project Summary](#A.-Project-Summary)
-- [Mission Statement](#B.-Mission-Statement)
+[Background](#2-Background)
+- [Project Summary](#a-Project-Summary)
+- [Mission Statement](#b-Mission-Statement)
 
-[Leadership Structure](#3.-Leadership-Structure)
+[Leadership Structure](#3-Leadership-Structure)
 
 [Governance of the standardization process](#4.-Governance-of-the-standardization-process)
 - Principle for open standards development
@@ -31,4 +31,34 @@ The Brain Imaging Data Structure (BIDS) is a standard specifying the description
 
 ### 3. Leadership structure
 
-### 4.
+### Governance of the standardization process
+
+#### Principles for open standards development
+
+#### Standard decision making process overview
+
+#### Standard development process
+
+### Appendix
+
+#### BEP Procedure
+
+#### Voting Procedure
+
+#### License
+
+#### Help
+
+#### Acknowledgements
+This document draws heavily from the [Modern Paradigm for Standards](https://open-stand.org/about-us/principles/) and from other open-source governance documents including:
+- https://docs.scipy.org/doc/numpy-dev/dev/governance/governance.html
+- https://www.ieee.org/about/corporate/governance/index.html
+- https://www.apache.org/foundation/governance/
+- https://www.niso.org/what-we-do/creating-NISO-standards
+- https://predictablynoisy.com/rust-governance
+- https://www.seedsforchange.org.uk/consensus
+- https://en.wikipedia.org/wiki/Internet_governance
+- https://www.icann.org/resources/pages/governance/guidelines-en
+- https://github.com/bids-standard/bids-specification/pull/104
+- https://randyfay.com/content/drupals-governance
+- https://www.drupal.org/governance
