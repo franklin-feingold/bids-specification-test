@@ -2,19 +2,25 @@
 
 Table of Contents
 
-[Introduction](#1-Introduction)
+[1. Introduction](#1-Introduction)
 
-[Background](#2-Background)
-- [Project Summary](#a-Project-Summary)
-- [Mission Statement](#b-Mission-Statement)
+[2. Background](#2-Background)
+- [A. Project Summary](#a-Project-Summary)
+- [B. Mission Statement](#b-Mission-Statement)
 
-[Leadership Structure](#3-Leadership-Structure)
+[3. Leadership Structure](#3-Leadership-Structure)
 
-[Governance of the standardization process](#4.-Governance-of-the-standardization-process)
-- Principle for open standards development
-- Standard decision making process overview
+[4. Governance of the standardization process](#4-Governance-of-the-standardization-process)
+- [A. Principle for open standards development](#a-Principle-for-open-standards-develop)
+- [B. Standard decision making process overview](#b-Standard-decision-making-process-overview)
+- [C. Standard development process](#c-Standard-development-process)
 
-
+[X. Appendix](#x-Appendix)
+- [A. BEP Procedure](#a-BEP-Procedure)
+- [B. Voting Procedure](#b-Voting-Procedure)
+- [C. License](#c-License)
+- [D. Help](#d-Help)
+- [E. Acknowledgements](#e-Acknowledgements)
 
 
 ### 1. Introduction
@@ -31,25 +37,25 @@ The Brain Imaging Data Structure (BIDS) is a standard specifying the description
 
 ### 3. Leadership structure
 
-### Governance of the standardization process
+### 4. Governance of the standardization process
 
-#### Principles for open standards development
+#### A. Principles for open standards development
 
-#### Standard decision making process overview
+#### B. Standard decision making process overview
 
-#### Standard development process
+#### C. Standard development process
 
-### Appendix
+### X. Appendix
 
-#### BEP Procedure
+#### A. BEP Procedure
 
-#### Voting Procedure
+#### B. Voting Procedure
 
-#### License
+#### C. License
 
-#### Help
+#### D. Help
 
-#### Acknowledgements
+#### E. Acknowledgements
 This document draws heavily from the [Modern Paradigm for Standards](https://open-stand.org/about-us/principles/) and from other open-source governance documents including:
 - https://docs.scipy.org/doc/numpy-dev/dev/governance/governance.html
 - https://www.ieee.org/about/corporate/governance/index.html
