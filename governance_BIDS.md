@@ -15,7 +15,7 @@ Table of Contents
 - [B. Standard decision making process overview](#b-Standard-decision-making-process-overview)
 
 [X. Appendix](#x-Appendix)
-- [A. BEP Procedure - Key definitions](#a-BEP-Procedure)
+- [A. BEP Procedure - Key definitions](#a-bep-procedure-key-definitions)
 - [B. Voting Procedure](#b-Voting-Procedure-Key-definitions)
 - [C. Governance ratification and BIDS Steering Group initialization](#c-Governance-ratification-and-BIDS-Steering-Group-initialization)
 - [D. License](#d-License)
