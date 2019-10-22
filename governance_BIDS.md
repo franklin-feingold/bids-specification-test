@@ -11,12 +11,12 @@ Table of Contents
 [3. Leadership Structure](#3-Leadership-Structure)
 
 [4. Governance of the standardization process](#4-Governance-of-the-standardization-process)
-- [A. Principles for open standards development](#a-Principles-for-open-standards-develop)
+- [A. Principles for open standards development](#a-Principles-for-open-standards-development)
 - [B. Standard decision making process overview](#b-Standard-decision-making-process-overview)
 
 [X. Appendix](#x-Appendix)
-- [A. BEP Procedure - Key definitions](#a-BEP-Procedure-Key-definitions)
-- [B. Voting Procedure](#b-Voting-Procedure)
+- [A. BEP Procedure - Key definitions](#a-BEP-Procedure)
+- [B. Voting Procedure](#b-Voting-Procedure:-Key-definitions)
 - [C. Governance ratification and BIDS Steering Group initialization](#c-Governance-ratification-and-BIDS-Steering-Group-initialization)
 - [D. License](#d-License)
 - [E. Help](#e-Help)
@@ -145,7 +145,7 @@ The criteria for merging a Proposed BEP into the BIDS Standard:
 
 ### X. Appendix
 
-#### A. BEP Procedure - Key definitions
+#### A. BEP Procedure: Key definitions
 
 **BIDS Specification** - This is the [BIDS specification](https://bids-specification.readthedocs.io/en/stable/). This covers the current raw data organization for brain MRI, MEG, EEG, and iEEG.
 
