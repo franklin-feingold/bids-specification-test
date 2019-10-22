@@ -16,7 +16,7 @@ Table of Contents
 
 [X. Appendix](#x-Appendix)
 - [A. BEP Procedure - Key definitions](#a-bep-procedure-key-definitions)
-- [B. Voting Procedure](#b-Voting-Procedure-Key-definitions)
+- [B. Voting Procedure](#b-voting-procedure)
 - [C. Governance ratification and BIDS Steering Group initialization](#c-Governance-ratification-and-BIDS-Steering-Group-initialization)
 - [D. License](#d-License)
 - [E. Help](#e-Help)
