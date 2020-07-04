@@ -44,10 +44,6 @@ jobs:
              cat ~/build/CHANGES.md
              mv ~/build/CHANGES.md ~/build/src/CHANGES.md
              else
-
-             cat ~/build/CHANGES.md
-             mv ~/build/CHANGES.md ~/build/src/CHANGES.md
-             else
              echo "Commit or Release, do nothing"
              fi
       - persist_to_workspace:
